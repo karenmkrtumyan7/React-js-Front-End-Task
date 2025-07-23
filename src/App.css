@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #141414;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 80px;
+  transition: margin-left 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
